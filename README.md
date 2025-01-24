@@ -284,7 +284,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Malak Seddik - [@LinkedIn](https://www.linkedin.com/in/malakseddik) - M.Ragab0879@student.aast.edu
+Malak Seddik - [LinkedIn](https://www.linkedin.com/in/malakseddik) - M.Ragab0879@student.aast.edu
 
 Project Link: [https://github.com/yourusername/madin-egypt](https://github.com/yourusername/madin-egypt)
 
