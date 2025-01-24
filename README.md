@@ -36,8 +36,9 @@ To get a local copy up and running, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/madin-egypt.git
-   cd madin-egypt
+   git clone https://github.com/MalakSeddik/MADINegypt_online_store
+.git
+   cd MADINegypt_online_store
    ```
 
 2. **Install dependencies**:
@@ -72,31 +73,199 @@ To get a local copy up and running, follow these steps:
 ## Project Structure
 
 ```
-madin-egypt/
-│
-├── client/                  # Frontend React application
-│   ├── public/              # Static assets
-│   ├── src/                 # React components, pages, and styles
-│   │   ├── components/      # Reusable components
-│   │   ├── pages/           # Different pages of the application
-│   │   ├── App.js           # Main application component
-│   │   └── index.js         # Entry point for the React app
-│   └── package.json         # Frontend dependencies
-│
-├── server/                  # Backend Node.js application
-│   ├── config/              # Configuration files (e.g., database connection)
-│   ├── controllers/         # Logic for handling routes
-│   ├── models/              # MongoDB models
-│   ├── routes/              # API routes
-│   ├── middleware/          # Custom middleware (e.g., authentication)
-│   ├── utils/               # Utility functions
-│   ├── app.js               # Main application file
-│   └── package.json         # Backend dependencies
-│
-├── .env                     # Environment variables
-├── .gitignore               # Specifies files to ignore in Git
-├── README.md                # Project documentation
-└── package.json             # Root dependencies and scripts
+MADINegypt_online_store
+│   
+├───admin
+│   │   .gitignore
+│   │   package-lock.json
+│   │   package.json
+│   │   README.md
+│   │   
+│   ├───public
+│   │       favicon.ico
+│   │       index.html
+│   │       manifest.json
+│   │       robots.txt
+│   │       
+│   └───src
+│       │   App.js
+│       │   index.css
+│       │   index.js
+│       │   
+│       ├───Components
+│       │   ├───AddProduct
+│       │   │       AddProduct.css
+│       │   │       AddProduct.jsx
+│       │   │       
+│       │   ├───Assets
+│       │   │       arrow_icon.svg
+│       │   │       cross_icon.png
+│       │   │       nav-logo.svg
+│       │   │       nav-profile.svg
+│       │   │       Product_Cart.svg
+│       │   │       Product_list_icon.svg
+│       │   │       upload_area.svg
+│       │   │       upload_cloud_icon.svg
+│       │   │       
+│       │   ├───Footer
+│       │   │       Footer.css
+│       │   │       Footer.jsx
+│       │   │       
+│       │   ├───ListProduct
+│       │   │       ListProduct.css
+│       │   │       ListProduct.jsx
+│       │   │       
+│       │   ├───Navbar
+│       │   │       Navbar.css
+│       │   │       Navbar.jsx
+│       │   │       
+│       │   └───Sidebar
+│       │           Sidebar.css
+│       │           Sidebar.jsx
+│       │           
+│       └───Pages
+│           │   Admin.jsx
+│           │   
+│           └───CSS
+│                   Admin.css
+│                   
+├───backend
+│   │   .env
+│   │   .gitignore
+│   │   index.js
+│   │   package-lock.json
+│   │   package.json
+│   │   
+│   └───upload
+│       └───images
+└───frontend
+    │   .gitignore
+    │   package-lock.json
+    │   package.json
+    │   README.md
+    │   
+    ├───public
+    │       favicon.ico
+    │       index.html
+    │       manifest.json
+    │       robots.txt
+    │       
+    └───src
+        │   App.js
+        │   
+        └───Components
+            ├───Assets
+            │       arrow.png
+            │       banner_kids.png
+            │       banner_mens.png
+            │       banner_women.png
+            │       breadcrum_arrow.png
+            │       cart_cross_icon.png
+            │       cart_icon.png
+            │       cart_product_icon.png
+            │       dropdown_icon.png
+            │       exclusive_image.png
+            │       hand_icon.png
+            │       hero_image.png
+            │       instagram_icon.png
+            │       logo.png
+            │       logo_big.png
+            │       nav_dropdown.png
+            │       p1_product.png
+            │       p1_product_i1.png
+            │       p1_product_i2.png
+            │       p1_product_i3.png
+            │       p1_product_i4.png
+            │       pintester_icon.png
+            │       product_1.png
+            │       product_10.png
+            │       product_11.png
+            │       product_12.png
+            │       product_13.png
+            │       product_14.png
+            │       product_15.png
+            │       product_16.png
+            │       product_17.png
+            │       product_18.png
+            │       product_19.png
+            │       product_2.png
+            │       product_20.png
+            │       product_21.png
+            │       product_22.png
+            │       product_23.png
+            │       product_24.png
+            │       product_25.png
+            │       product_26.png
+            │       product_27.png
+            │       product_28.png
+            │       product_29.png
+            │       product_3.png
+            │       product_30.png
+            │       product_31.png
+            │       product_32.png
+            │       product_33.png
+            │       product_34.png
+            │       product_35.png
+            │       product_36.png
+            │       product_4.png
+            │       product_5.png
+            │       product_6.png
+            │       product_7.png
+            │       product_8.png
+            │       product_9.png
+            │       star_dull_icon.png
+            │       star_icon.png
+            │       whatsapp_icon.png
+            │       
+            ├───Breadcrums
+            │       Breadcrums.css
+            │       Breadcrums.jsx
+            │       
+            ├───CartItems
+            │       CartItems.css
+            │       CartItems.jsx
+            │       
+            ├───DescriptionBox
+            │       DescriptionBox.css
+            │       DescriptionBox.jsx
+            │       
+            ├───Footer
+            │       Footer.css
+            │       Footer.jsx
+            │       
+            ├───Hero
+            │       Hero.css
+            │       Hero.jsx
+            │       
+            ├───Item
+            │       Item.css
+            │       Item.jsx
+            │       
+            ├───Navbar
+            │       Navbar.css
+            │       Navbar.jsx
+            │       
+            ├───NewCollections
+            │       NewCollections.css
+            │       NewCollections.jsx
+            │       
+            ├───NewsLetter
+            │       NewsLetter.css
+            │       NewsLetter.jsx
+            │       
+            ├───Offers
+            │       Offers.css
+            │       Offers.jsx
+            │       
+            ├───Popular
+            │       Popular.css
+            │       Popular.jsx
+            │       
+            └───ProductDisplay
+                    ProductDisplay.css
+                    ProductDisplay.jsx
+                    
+
 ```
 
 ## Contributing
@@ -115,7 +284,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - your.email@example.com
+Malak Seddik - [@LinkedIn](https://www.linkedin.com/in/malakseddik) - M.Ragab0879@student.aast.edu
 
 Project Link: [https://github.com/yourusername/madin-egypt](https://github.com/yourusername/madin-egypt)
 
